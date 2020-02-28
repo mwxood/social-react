@@ -11,6 +11,7 @@ const App = () => {
       <Header/>
       <div className="contentFlex">
         <Sidebar/>
+
         <Content/>
       </div>
       <Footer/>
