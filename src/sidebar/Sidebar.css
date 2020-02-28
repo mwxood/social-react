@@ -1,0 +1,28 @@
+@media (min-width: 980px) {
+    .sidebar {
+        width: 25%;
+        box-sizing: border-box;
+    }
+}
+
+.sidebar {
+    background: #ecf0f1;
+    padding: 40px;
+}
+
+.sidebar nav ul{
+    list-style: none;
+}
+
+.sidebar nav li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar nav a {
+    color: #2980b9;
+    text-decoration: none;
+}
+.sidebar nav a:hover {
+    color: #3498db;
+}
