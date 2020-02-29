@@ -11,11 +11,12 @@
     max-width: 100%;
 }
 
-.profile-holder {
+.profileHolder {
     display: flex;
     padding: 20px 0;
 }
 
-.profile-text {
+.profileText {
     padding: 0 20px;
 }
+

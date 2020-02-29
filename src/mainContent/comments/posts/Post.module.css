@@ -1,0 +1,17 @@
+.postItem {
+    background: #ecf0f1;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.avatarHolder {
+    width: 100px;
+    margin-right: 20px;
+}
+.avatarHolder img {
+    max-width: 100%;
+}
+
+.postHolder {
+    display: flex;
+}

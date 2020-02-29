@@ -8,9 +8,15 @@ nav.navigation li {
 }
 
 nav.navigation a {
-    color: #2980b9;
     text-decoration: none;
 }
-nav.navigation a:hover {
-    color: #3498db;
+
+nav.navigation .item a{
+    color: #2980b9;
+}
+nav.navigation .active a{
+    color: #e74c3c;
+}
+nav.navigation .item a:hover {
+    color: #e74c3c;
 }

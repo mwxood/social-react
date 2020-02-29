@@ -1,0 +1,21 @@
+.myPosts{
+
+}
+.textarea {
+    width: 100%;
+    margin: 10px 0;
+}
+.submitBtn {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 14px 25px;
+    cursor: pointer;
+}
+.submitBtn:hover {
+    background: #e74c3c;
+}
+
+.postForm {
+    margin: 30px 0;
+}

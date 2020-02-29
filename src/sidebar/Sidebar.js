@@ -1,10 +1,10 @@
 import React from 'react';
-import './Sidebar.css';
+import sidebar from './Sidebar.module.css';
 import Navigation from "../nav/Navigation";
 
 const Sidebar = () => {
     return(
-        <aside className="sidebar">
+        <aside className={sidebar.sidebar}>
             <Navigation/>
         </aside>
     );
