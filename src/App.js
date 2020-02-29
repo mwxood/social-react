@@ -1,9 +1,10 @@
 import React from 'react';
 import Header from "./header/Header";
 import Sidebar from "./sidebar/Sidebar";
-import Content from "./mainContent/Content";
+
 import Footer from "./footer/Footer";
 import './App.css';
+import Profile from "./mainContent/Profile";
 
 const App = () => {
   return (
@@ -11,12 +12,11 @@ const App = () => {
       <Header/>
       <div className="contentFlex">
         <Sidebar/>
-
-        <Content/>
+        <Profile/>
       </div>
       <Footer/>
     </div>
   );
-}
+};
 
 export default App;

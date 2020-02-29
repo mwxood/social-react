@@ -1,0 +1,16 @@
+nav.navigation ul{
+    list-style: none;
+}
+
+nav.navigation li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav.navigation a {
+    color: #2980b9;
+    text-decoration: none;
+}
+nav.navigation a:hover {
+    color: #3498db;
+}
