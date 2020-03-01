@@ -3,3 +3,7 @@
 .contentFlex {
   display: flex;
 }
+
+.contentHolder {
+  padding: 40px;
+}

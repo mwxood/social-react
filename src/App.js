@@ -5,6 +5,7 @@ import Sidebar from "./sidebar/Sidebar";
 import Footer from "./footer/Footer";
 import './App.css';
 import Profile from "./mainContent/Profile";
+import Dialogs from "./dialogs/Dialogs";
 
 const App = () => {
   return (
@@ -12,7 +13,10 @@ const App = () => {
       <Header/>
       <div className="contentFlex">
         <Sidebar/>
-        <Profile/>
+        <div className="contentHolder">
+            {/*<Profile/>*/}
+           <Dialogs/>
+        </div>
       </div>
       <Footer/>
     </div>

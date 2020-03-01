@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18cc9937-87e9-4634-9dc7-ac00a0212931" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/mainContent/comments/Comments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mainContent/comments/Comments.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mainContent/comments/posts/Post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mainContent/comments/posts/Post.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mainContent/myPosts/MyPost.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mainContent/myPosts/MyPost.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dialogs/Dialogs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dialogs/Dialogs.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/footer/Footer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainContent/Content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/Content.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainContent/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainContent/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nav/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/nav/Navigation.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nav/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/nav/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sidebar/Sidebar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sidebar/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainContent/Content.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/Content.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainContent/comments/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/comments/Comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainContent/comments/posts/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/comments/posts/Post.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +57,7 @@
       <workItem from="1582899715047" duration="976000" />
       <workItem from="1582994962392" duration="6781000" />
       <workItem from="1583003614893" duration="944000" />
+      <workItem from="1583078165636" duration="4556000" />
     </task>
     <servers />
   </component>

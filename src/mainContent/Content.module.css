@@ -1,11 +1,3 @@
-@media (min-width: 980px) {
-    .content {
-        width: 75%;
-    }
-}
-.content {
-    padding: 40px;
-}
 
 .imageHolder img{
     max-width: 100%;
