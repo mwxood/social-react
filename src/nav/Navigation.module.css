@@ -11,12 +11,12 @@ nav.navigation a {
     text-decoration: none;
 }
 
-nav.navigation .item a{
+nav.navigation a{
     color: #2980b9;
 }
-nav.navigation .active a{
-    color: #e74c3c;
+nav.navigation a.active {
+    color: #e74c3c !important;
 }
-nav.navigation .item a:hover {
+nav.navigation a:hover {
     color: #e74c3c;
 }

@@ -6,19 +6,28 @@ import Footer from "./footer/Footer";
 import './App.css';
 import Profile from "./mainContent/Profile";
 import Dialogs from "./dialogs/Dialogs";
+import {BrowserRouter, Route} from "react-router-dom";
+import Music from "./music/Music";
+import Settings from "./settings/Settings";
+import News from "./news/News";
 
 const App = () => {
   return (
     <div className="App">
-      <Header/>
-      <div className="contentFlex">
-        <Sidebar/>
-        <div className="contentHolder">
-            {/*<Profile/>*/}
-           <Dialogs/>
-        </div>
-      </div>
-      <Footer/>
+        <BrowserRouter>
+          <Header/>
+          <div className="contentFlex">
+            <Sidebar/>
+            <div className="contentHolder">
+                <Route path="/dialogs" component={Dialogs} />
+                <Route path="/profile" component={Profile}/>
+                <Route path="/news" component={News}/>
+                <Route path="/music" component={Music}/>
+                <Route path="/settings" component={Settings}/>
+            </div>
+          </div>
+          <Footer/>
+        </BrowserRouter>
     </div>
   );
 };

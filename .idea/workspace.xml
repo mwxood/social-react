@@ -29,6 +29,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -58,6 +59,8 @@
       <workItem from="1582994962392" duration="6781000" />
       <workItem from="1583003614893" duration="944000" />
       <workItem from="1583078165636" duration="4556000" />
+      <workItem from="1583141668667" duration="16000" />
+      <workItem from="1583141686326" duration="6134000" />
     </task>
     <servers />
   </component>
