@@ -4,7 +4,8 @@ import MyPost from "./myPosts/MyPost";
 import Comments from "./comments/Comments";
 
 
-const Profile = () => {
+const Profile = (props) => {
+
     return(
         <main className={content.content}>
             <div className={content.imageHolder}>
@@ -16,8 +17,8 @@ const Profile = () => {
                     dasdasd
                 </div>
             </div>
-           <MyPost/>
-           <Comments/>
+           <MyPost />
+           <Comments posts={props.posts}/>
         </main>
     );
 };
