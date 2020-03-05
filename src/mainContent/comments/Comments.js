@@ -11,7 +11,7 @@ const Comments = () => {
         {id: 2, post: "It's my first post", src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg", likesCount: 18}
     ];
 
-    let postElement = postData.map(post => <Post likeCounts={post.likesCount} message={post.post} avatarImage={post.src} />);
+    let postElement = postData.map((post, i) => <Post likeCounts={post.likesCount} key={i} message={post.post} avatarImage={post.src} />);
 
     return(
         <div className={comments.postComments}>

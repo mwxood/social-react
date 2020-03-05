@@ -17,10 +17,10 @@ const Dialogs = (props) => {
     ];
 
     let dialogsElements = dialogsData
-        .map( dialog => <DialogUsers id={dialog.id} dialogUser={dialog.name} />);
+        .map( (dialog, i) => <DialogUsers id={dialog.id} key={i} dialogUser={dialog.name} />);
 
     let messagesElements = messagesData
-        .map(messageData => <DialogMessages message={messageData.message} />);
+        .map((messageData, i) => <DialogMessages key={i} message={messageData.message} />);
 
     return(
         <div className={dialog.flexContent}>
