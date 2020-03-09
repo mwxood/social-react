@@ -5,11 +5,13 @@ import DialogMessages from "./DialogMessages";
 
 const Dialogs = (props) => {
 
-    let dialogsElements = props.users
+    console.log(props.state.messages[0].src);
+
+    let dialogsElements = props.state.dialogs
         .map( (dialog, i) => <DialogUsers id={dialog.id} key={i} name={dialog.name} />);
 
-    let messagesElements = props.messages
-        .map((messageData, i) => <DialogMessages key={i} message={messageData.message} />);
+    let messagesElements = props.state.messages
+        .map((messageData, i) => <DialogMessages key={i} message={messageData.message} src={messageData.src}   />);
 
     return(
         <div className={dialog.flexContent}>
@@ -17,7 +19,7 @@ const Dialogs = (props) => {
                 {dialogsElements}
             </div>
             <div className={dialog.messagesHolder}>
-                {messagesElements}
+               {messagesElements}
             </div>
         </div>
     );

@@ -20,10 +20,8 @@ const App = (props) => {
           <div className="contentFlex">
             <Sidebar/>
             <div className="contentHolder">
-                {/*<Route path="/dialogs" component={Dialogs} />*/}
-                <Route path="/dialogs" render={() => <Dialogs users={props.users} messages={props.messages}/>} />
-                <Route path="/profile" render={() => <Profile posts={props.posts}/>} />
-                {/*<Route path="/profile" component={Profile}/>*/}
+                <Route path="/dialogs" render={() => <Dialogs state={props.state.dialogsPage} />} />
+                <Route path="/profile" render={() => <Profile state={props.state.profilePage}/>} />
                 <Route path="/news" component={News}/>
                 <Route path="/music" component={Music}/>
                 <Route path="/settings" component={Settings}/>

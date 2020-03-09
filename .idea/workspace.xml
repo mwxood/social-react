@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18cc9937-87e9-4634-9dc7-ac00a0212931" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sidebar/friends/Friends.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dialogs/DialogUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dialogs/DialogUsers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dialogs/DialogMessages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dialogs/DialogMessages.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dialogs/Dialogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dialogs/Dialogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/dialogs/Dialogs.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainContent/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainContent/comments/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/comments/Comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sidebar/Sidebar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +67,7 @@
       <workItem from="1583396038133" duration="10161000" />
       <workItem from="1583428359552" duration="372000" />
       <workItem from="1583428763540" duration="5001000" />
+      <workItem from="1583776460353" duration="4975000" />
     </task>
     <servers />
   </component>
@@ -81,16 +86,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/App.js</url>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

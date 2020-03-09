@@ -43,3 +43,16 @@
     right: 100%;
     top: 5px;
 }
+
+.avatarImage {
+    width: 100px;
+    margin-right: 30px;
+}
+
+.avatarImage img {
+    max-width: 100%;
+}
+
+.messageHolder {
+    display: flex;
+}
