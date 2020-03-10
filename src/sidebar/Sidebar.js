@@ -4,9 +4,13 @@ import Navigation from "../nav/Navigation";
 import Friends from "./friends/Friends";
 
 const Sidebar = (props) => {
+
     return(
         <aside className={sidebar.sidebar}>
             <Navigation/>
+            <div className={sidebar.friendsHolder}>
+                <Friends state={props.state.friends} />
+            </div>
         </aside>
     );
 };

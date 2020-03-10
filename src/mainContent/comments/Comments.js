@@ -11,7 +11,7 @@ const Comments = (props) => {
         <div className={comments.postComments}>
             <h3>My Posts</h3>
             {postElement}
-s        </div>
+       </div>
     );
 };
 

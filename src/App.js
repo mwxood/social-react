@@ -15,10 +15,9 @@ const App = (props) => {
 
   return (
     <div className="App">
-        <BrowserRouter>
           <Header/>
           <div className="contentFlex">
-            <Sidebar/>
+            <Sidebar state={props.state.sidebar}/>
             <div className="contentHolder">
                 <Route path="/dialogs" render={() => <Dialogs state={props.state.dialogsPage} />} />
                 <Route path="/profile" render={() => <Profile state={props.state.profilePage}/>} />
@@ -28,7 +27,6 @@ const App = (props) => {
             </div>
           </div>
           <Footer/>
-        </BrowserRouter>
     </div>
   );
 };

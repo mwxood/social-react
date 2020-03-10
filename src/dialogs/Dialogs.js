@@ -5,8 +5,6 @@ import DialogMessages from "./DialogMessages";
 
 const Dialogs = (props) => {
 
-    console.log(props.state.messages[0].src);
-
     let dialogsElements = props.state.dialogs
         .map( (dialog, i) => <DialogUsers id={dialog.id} key={i} name={dialog.name} />);
 
