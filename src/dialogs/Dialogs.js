@@ -11,6 +11,13 @@ const Dialogs = (props) => {
     let messagesElements = props.state.messages
         .map((messageData, i) => <DialogMessages key={i} message={messageData.message} src={messageData.src}   />);
 
+     let message = React.createRef();
+
+     let addMessage = () => {
+         let text = message.current.value;
+         alert(text);
+     };
+
     return(
         <div className={dialog.flexContent}>
             <div className={dialog.usersHolder}>
@@ -18,6 +25,8 @@ const Dialogs = (props) => {
             </div>
             <div className={dialog.messagesHolder}>
                {messagesElements}
+                <textarea ref={message} className={dialog.messageForm} name="" id="" cols="30" rows="10"></textarea>
+                <button onClick={addMessage} className={dialog.button}>Add message</button>
             </div>
         </div>
     );

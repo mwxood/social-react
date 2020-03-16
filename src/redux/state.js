@@ -1,9 +1,10 @@
+import  {rerenderEntireTree} from '.././render';
 
 let state = {
     profilePage: {
         posts: [
             {id: 1, post: "Hi, how are you?", src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg", likesCount: 12 },
-            {id: 2, post: "It's my first post", src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg", likesCount: 18}
+            {id: 2, post: "It's my first post", src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg", likesCount: 18},
         ],
     },
 
@@ -29,4 +30,16 @@ let state = {
     }
 };
 
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 5,
+        post: postMessage,
+        src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg",
+        likesCount: 0
+    };
+  state.profilePage.posts.push(newPost);
+  rerenderEntireTree(state);
+};
+
 export default state;
+

@@ -3,7 +3,6 @@ import sidebar from '../Sidebar.module.css';
 import FriendsItem from "./FriendsItem";
 
 const Friends = (props) => {
-    console.log(props.state)
     let friends = props.state
         .map((friends, i) =>  <FriendsItem id={friends.id} key={i} name={friends.name} src={friends.src} />);
 

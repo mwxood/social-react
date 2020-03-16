@@ -10,6 +10,7 @@ const DialogMessages = (props) => {
        <div className={dialog.message}>
          {props.message}
        </div>
+
      </div>
   );
 };

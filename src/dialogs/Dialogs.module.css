@@ -56,3 +56,15 @@
 .messageHolder {
     display: flex;
 }
+.messageForm {
+    width: 100%;
+    margin: 10px 0;
+ }
+
+.button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 14px 25px;
+    cursor: pointer;
+}

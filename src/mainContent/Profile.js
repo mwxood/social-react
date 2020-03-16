@@ -5,6 +5,7 @@ import Comments from "./comments/Comments";
 
 
 const Profile = (props) => {
+
     return(
         <main className={content.content}>
             <div className={content.imageHolder}>
@@ -16,8 +17,8 @@ const Profile = (props) => {
                     dasdasd
                 </div>
             </div>
-           <MyPost />
-           <Comments state={props.state.posts}/>
+           <MyPost addPost={props.addPost}  state={props.state.posts} />
+           <Comments state={props.state.posts} />
         </main>
     );
 };
