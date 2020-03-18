@@ -1,75 +1,76 @@
-let rerenderEntireTree = () => {
-    console.log("state changed");
-};
+let store = {
+    _state: {
+        profilePage: {
+            posts: [
+                {id: 1, post: "Hi, how are you?", src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg", likesCount: 12 },
+                {id: 2, post: "It's my first post", src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg", likesCount: 18},
+            ],
+            newPostText: "samurai"
+        },
 
-let state = {
-    profilePage: {
-        posts: [
-            {id: 1, post: "Hi, how are you?", src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg", likesCount: 12 },
-            {id: 2, post: "It's my first post", src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg", likesCount: 18},
-        ],
-        newPostText: "samurai"
+        dialogsPage: {
+            dialogs: [
+                {id: 1, name: "Mihail" },
+                {id: 2, name: "Mihaela" },
+                {id: 3, name: "Misho" }
+            ],
+            messages: [
+                {id: 1, message: "Hello", src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg" },
+                {id: 2, message: "Hi", src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg" },
+                {id: 3, message: "How are you?", src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg" }
+            ],
+            messageValue: "new message"
+        },
+
+        sidebar: {
+            friends: [
+                {id: 1, name: "Mihail",src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg" },
+                {id: 2, name: "Mihaela",src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg" },
+                {id: 3, name: "Misho",src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg" }
+            ]
+        }
+    },
+    getState() {
+        return this._state;
+    },
+    _callSubscriber(){
+        console.log("state changed");
+    },
+    addPost(){
+        let newPost = {
+            id: 5,
+            post: this._state.profilePage.newPostText,
+            src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg",
+            likesCount: 0
+        };
+        this._state.profilePage.posts.push(newPost);
+        this._state.profilePage.newPostText = "";
+        this._callSubscriber(this._state);
+    },
+    updatePostText(newText){
+        this._state.profilePage.newPostText = newText;
+        this._callSubscriber(this._state);
     },
 
-    dialogsPage: {
-        dialogs: [
-            {id: 1, name: "Mihail" },
-            {id: 2, name: "Mihaela" },
-            {id: 3, name: "Misho" }
-        ],
-        messages: [
-            {id: 1, message: "Hello", src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg" },
-            {id: 2, message: "Hi", src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg" },
-            {id: 3, message: "How are you?", src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg" }
-        ],
-        messageValue: "new message"
+    newMessage(){
+        let newMessage = {
+            id: 10,
+            message: this._state.dialogsPage.messageValue,
+            src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg",
+        };
+        this._state.dialogsPage.messages.push(newMessage);
+        this._state.dialogsPage.messageValue = "";
+        this._callSubscriber(this._state);
+    },
+    updateMessage(messageValue){
+        this._state.dialogsPage.messageValue = messageValue;
+        this._callSubscriber(this._state);
     },
 
-    sidebar: {
-        friends: [
-            {id: 1, name: "Mihail",src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg" },
-            {id: 2, name: "Mihaela",src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg" },
-            {id: 3, name: "Misho",src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg" }
-        ]
+    subscribe(observer){
+        this._callSubscriber = observer;
     }
 };
 
-export let addPost = () => {
-    let newPost = {
-        id: 5,
-        post: state.profilePage.newPostText,
-        src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg",
-        likesCount: 0
-    };
-    state.profilePage.posts.push(newPost);
-    state.profilePage.newPostText = "";
-    rerenderEntireTree(state);
-};
-
-export let updatePostText = (newText) => {
-    state.profilePage.newPostText = newText;
-    rerenderEntireTree(state);
-};
-
-export let newMessage = () => {
-    let newMessage = {
-        id: 10,
-        message: state.dialogsPage.messageValue,
-        src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg",
-    };
-    state.dialogsPage.messages.push(newMessage);
-    state.dialogsPage.messageValue = "";
-    rerenderEntireTree(state);
-};
-
-export let updateMessage = (messageValue) => {
-    state.dialogsPage.messageValue = messageValue;
-    rerenderEntireTree(state);
-};
-
-export const subscribe = (observer) => {
-    rerenderEntireTree = observer;
-};
-
-export default state;
+export default store;
 
