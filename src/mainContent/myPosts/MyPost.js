@@ -6,13 +6,17 @@ const MyPost = (props) => {
 
     let addNewPost = (e) => {
         e.preventDefault();
-        props.addPost();
+        let text = newPostElement.current.value;
+        if(!text) {
+            return;
+        }
+        props.dispatch({type: "ADD-POST"});
     };
 
     let onPostChange = (e) => {
         e.preventDefault();
       let text = newPostElement.current.value;
-      props.updatePostText(text);
+      props.dispatch({type: "UPDATE-NEW-POST_TEXT", newText: text});
     };
 
 
@@ -20,7 +24,7 @@ const MyPost = (props) => {
       <div className={posts.myPosts}>
           <h3>New post</h3>
           <form className={posts.postForm} action="">
-              <textarea ref={newPostElement} onChange={onPostChange} className={posts.textarea} name="" id="" cols="30" rows="10" value={props.newPostText} />
+              <textarea ref={newPostElement} onChange={onPostChange} className={posts.textarea} name="" id="" cols="30" rows="10" value={props.state.newPostText} />
               <button onClick={addNewPost} className={posts.submitBtn}>Add Post</button>
           </form>
       </div>

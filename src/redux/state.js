@@ -30,45 +30,46 @@ let store = {
             ]
         }
     },
-    getState() {
-        return this._state;
-    },
     _callSubscriber(){
         console.log("state changed");
     },
-    addPost(){
-        let newPost = {
-            id: 5,
-            post: this._state.profilePage.newPostText,
-            src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg",
-            likesCount: 0
-        };
-        this._state.profilePage.posts.push(newPost);
-        this._state.profilePage.newPostText = "";
-        this._callSubscriber(this._state);
+    getState() {
+        return this._state;
     },
-    updatePostText(newText){
-        this._state.profilePage.newPostText = newText;
-        this._callSubscriber(this._state);
-    },
-
-    newMessage(){
-        let newMessage = {
-            id: 10,
-            message: this._state.dialogsPage.messageValue,
-            src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg",
-        };
-        this._state.dialogsPage.messages.push(newMessage);
-        this._state.dialogsPage.messageValue = "";
-        this._callSubscriber(this._state);
-    },
-    updateMessage(messageValue){
-        this._state.dialogsPage.messageValue = messageValue;
-        this._callSubscriber(this._state);
-    },
-
     subscribe(observer){
         this._callSubscriber = observer;
+    },
+
+    dispatch(action) {
+        if(action.type === "ADD-POST") {
+            let newPost = {
+                id: 5,
+                post: this._state.profilePage.newPostText,
+                src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg",
+                likesCount: 0
+            };
+            this._state.profilePage.posts.push(newPost);
+            this._state.profilePage.newPostText = "";
+            this._callSubscriber(this._state);
+
+        } else if(action.type === "UPDATE-NEW-POST_TEXT") {
+            this._state.profilePage.newPostText = action.newText;
+            this._callSubscriber(this._state);
+
+        } else if(action.type === "ADD-MESSAGE") {
+            let newMessage = {
+                id: 10,
+                message: this._state.dialogsPage.messageValue,
+                src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg",
+            };
+            this._state.dialogsPage.messages.push(newMessage);
+            this._state.dialogsPage.messageValue = "";
+            this._callSubscriber(this._state);
+
+        } else if(action.type === "UPDATE-MESSAGE") {
+            this._state.dialogsPage.messageValue = action.newMessage;
+            this._callSubscriber(this._state);
+        }
     }
 };
 
