@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18cc9937-87e9-4634-9dc7-ac00a0212931" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/dialogsReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/profileReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/sidebarReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
     </list>
@@ -72,7 +75,8 @@
       <workItem from="1584111373086" duration="22682000" />
       <workItem from="1584463318990" duration="4553000" />
       <workItem from="1584541368154" duration="7076000" />
-      <workItem from="1584629176447" duration="5668000" />
+      <workItem from="1584629176447" duration="5993000" />
+      <workItem from="1584951001567" duration="3665000" />
     </task>
     <servers />
   </component>
@@ -91,5 +95,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/state.js</url>
+          <line>12</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/state.js</url>
+          <line>46</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

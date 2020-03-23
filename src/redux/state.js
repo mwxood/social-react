@@ -1,7 +1,13 @@
+import profileReducer from "./profileReducer";
+import dialogsReducer from "./dialogsReducer";
+import sidebarReducer from "./sidebarReducer";
+
 const ADD_POST = 'ADD-POST';
 const UPDATE_POST = 'UPDATE-NEW-POST_TEXT';
 const ADD_MESSAGE = 'ADD-MESSAGE';
 const UPDATE_MESSAGE = 'UPDATE-MESSAGE';
+
+
 
 let store = {
     _state: {
@@ -46,36 +52,11 @@ let store = {
     },
 
     dispatch(action) {
-        if(action.type === ADD_POST) {
-            let newPost = {
-                id: 5,
-                post: this._state.profilePage.newPostText,
-                src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg",
-                likesCount: 0
-            };
-            this._state.profilePage.posts.push(newPost);
-            this._state.profilePage.newPostText = "";
-            this._callSubscriber(this._state);
+        this._state.profilePage = profileReducer(this._state.profilePage, action);
+        this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
+        this._state.sidebar = sidebarReducer(this._state.sidebar, action);
 
-        } else if(action.type === UPDATE_POST) {
-            this._state.profilePage.newPostText = action.newText;
-            this._callSubscriber(this._state);
-
-        } else if(action.type ===ADD_MESSAGE) {
-
-            let newMessage = {
-                id: 10,
-                message: this._state.dialogsPage.messageValue,
-                src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg",
-            };
-            this._state.dialogsPage.messages.push(newMessage);
-            this._state.dialogsPage.messageValue = "";
-            this._callSubscriber(this._state);
-
-        } else if(action.type === UPDATE_MESSAGE) {
-            this._state.dialogsPage.messageValue = action.newMessage;
-            this._callSubscriber(this._state);
-        }
+        this._callSubscriber(this._state);
     }
 };
 
