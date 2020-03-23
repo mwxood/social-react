@@ -12,7 +12,6 @@ import Settings from "./settings/Settings";
 import News from "./news/News";
 
 const App = (props) => {
-
   return (
     <div className="App">
           <Header/>
@@ -20,13 +19,11 @@ const App = (props) => {
             <Sidebar state={props.state.sidebar}/>
             <div className="contentHolder">
                 <Route path="/dialogs" render={() => <Dialogs
-                   state={props.state.dialogsPage}
-                   dispatch={props.dispatch}
+                   store={props.store}
                 />}
                 />
                 <Route path="/profile" render={() => <Profile
-                    state={props.state.profilePage}
-                    dispatch={props.dispatch}
+                    store={props.store}
                 />} />
                 <Route path="/news" component={News}/>
                 <Route path="/music" component={Music}/>

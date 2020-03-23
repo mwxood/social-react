@@ -1,8 +1,6 @@
 import React from "react";
 import content from './Content.module.css';
-import MyPost from "./myPosts/MyPost";
-import Comments from "./comments/Comments";
-
+import MyPostContainer from "./myPosts/MyPostContainer";
 
 const Profile = (props) => {
     return(
@@ -16,11 +14,9 @@ const Profile = (props) => {
                     dasdasd
                 </div>
             </div>
-           <MyPost
-               state={props.state}
-               dispatch={props.dispatch}
+           <MyPostContainer
+               store={props.store}
            />
-           <Comments state={props.state.posts} />
         </main>
     );
 };
