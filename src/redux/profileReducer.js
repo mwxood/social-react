@@ -22,4 +22,7 @@ const prifileReducer = (state, action) => {
 
 };
 
+export const addPostActionCreator = () => ({type: ADD_POST});
+export const updatePostActionCreator = (text) => ({type: UPDATE_POST,newText: text});
+
 export default prifileReducer;
