@@ -16,7 +16,7 @@ const App = (props) => {
     <div className="App">
           <Header/>
           <div className="contentFlex">
-            <Sidebar state={props.state.sidebar}/>
+            <Sidebar  store={props.store}/>
             <div className="contentHolder">
                 <Route path="/dialogs" render={() => <Dialogs
                    store={props.store}

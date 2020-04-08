@@ -1,7 +1,6 @@
 import React from 'react';
 import posts from "./MyPost.module.css";
 
-
 const MyPost = (props) => {
     let newPostElement = React.createRef();
 
@@ -11,13 +10,13 @@ const MyPost = (props) => {
         if(!text) {
             return;
         }
-        props.addPost();
+        props.addMessage();
     };
 
     let onPostChange = (e) => {
         e.preventDefault();
       let text = newPostElement.current.value;
-      props.updateNewPostText(text);
+        props.changeMessage(text);
     };
 
 

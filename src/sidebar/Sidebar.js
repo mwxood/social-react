@@ -1,15 +1,14 @@
 import React from 'react';
 import sidebar from './Sidebar.module.css';
 import Navigation from "../nav/Navigation";
-import Friends from "./friends/Friends";
+import FriendsContainer from "./friends/FriendsContainer";
 
 const Sidebar = (props) => {
-
     return(
         <aside className={sidebar.sidebar}>
-            <Navigation/>
+            <Navigation />
             <div className={sidebar.friendsHolder}>
-                <Friends state={props.state.friends} />
+                <FriendsContainer  store={props.store} />
             </div>
         </aside>
     );

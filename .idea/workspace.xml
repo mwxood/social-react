@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18cc9937-87e9-4634-9dc7-ac00a0212931" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dialogs/DialogItems.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dialogs/DialogsContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mainContent/myPosts/MyPostContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mainContent/comments/CommentsContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sidebar/friends/FriendsContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dialogs/Dialogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dialogs/Dialogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dialogs/DialogItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dialogs/DialogItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dialogs/DialogsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dialogs/DialogsContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainContent/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainContent/comments/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/comments/Comments.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainContent/myPosts/MyPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/myPosts/MyPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainContent/myPosts/MyPostContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/myPosts/MyPostContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dialogsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogsReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profileReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/sidebarReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/sidebarReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sidebar/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sidebar/friends/Friends.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sidebar/friends/Friends.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/dialogs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -83,7 +92,13 @@
       <workItem from="1584463318990" duration="4553000" />
       <workItem from="1584541368154" duration="7076000" />
       <workItem from="1584629176447" duration="5993000" />
-      <workItem from="1584951001567" duration="18533000" />
+      <workItem from="1584951001567" duration="18908000" />
+      <workItem from="1585033635866" duration="2778000" />
+      <workItem from="1585241845234" duration="4090000" />
+      <workItem from="1585641798333" duration="5000" />
+      <workItem from="1585656403284" duration="600000" />
+      <workItem from="1585931285717" duration="1863000" />
+      <workItem from="1586327171558" duration="7254000" />
     </task>
     <servers />
   </component>
@@ -109,25 +124,26 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/store.js</url>
           <line>6</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/store.js</url>
           <line>40</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/dialogs/DialogsContainer.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/App.js</url>
           <line>11</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/dialogs/DialogsContainer.js</url>
+          <line>4</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

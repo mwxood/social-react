@@ -1,12 +1,11 @@
 import {addPostActionCreator, updatePostActionCreator} from "../../redux/profileReducer";
-import MyPost from "./MyPost";
 import {connect} from "react-redux/es/alternate-renderers";
+import Friends from "./Friends";
 
 
 let mapStateToProps = (state) => {
     return {
-        posts: state.profilePage,
-        newPostText: state.profilePage.newPostText
+        friends: state.sidebar
     }
 };
 
@@ -21,7 +20,7 @@ let mapDispatchToProps = (dispatch) => {
     }
 };
 
-const MyPostContainer = connect(mapStateToProps, mapDispatchToProps)(MyPost);
+const FriendsContainer = connect(mapStateToProps, mapDispatchToProps)(Friends);
 
-export default MyPostContainer;
+export default FriendsContainer;
 

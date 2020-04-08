@@ -3,7 +3,7 @@ import dialog from './Dialogs.module.css';
 import DialogUsers from "./DialogUsers";
 import DialogMessages from "./DialogMessages";
 
-const Dialogs = (props) => {
+const DialogItems = (props) => {
     let dialogsElements = props.dialogs
          .map( (dialog, i) => <DialogUsers id={dialog.id} key={i} name={dialog.name} />);
 
@@ -40,4 +40,4 @@ const Dialogs = (props) => {
     );
 };
 
-export default Dialogs;
+export default DialogItems;

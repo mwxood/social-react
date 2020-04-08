@@ -1,6 +1,7 @@
 import React from "react";
 import content from './Content.module.css';
 import MyPostContainer from "./myPosts/MyPostContainer";
+import CommentsContainer from "./comments/CommentsContainer";
 
 const Profile = (props) => {
     return(
@@ -17,6 +18,7 @@ const Profile = (props) => {
            <MyPostContainer
                store={props.store}
            />
+           <CommentsContainer store={props.store} />
         </main>
     );
 };

@@ -4,7 +4,7 @@ import Post from "./posts/Post";
 
 
 const Comments = (props) => {
-    let postElement = props.posts.map((post, i) => <Post likeCounts={post.likesCount} key={i} message={post.post} avatarImage={post.src} />);
+    let postElement = props.posts.posts.map((post, i) => <Post likeCounts={post.likesCount} key={i} message={post.post} avatarImage={post.src} />);
 
     return(
         <div className={comments.postComments}>

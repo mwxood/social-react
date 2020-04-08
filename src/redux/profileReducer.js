@@ -10,6 +10,7 @@ let initialStateProfile ={
 };
 
 const prifileReducer = (state = initialStateProfile, action) => {
+    let stateCopy = {...state};
     switch (action.type) {
         case ADD_POST:
             let newPost = {
@@ -18,12 +19,13 @@ const prifileReducer = (state = initialStateProfile, action) => {
                 src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg",
                 likesCount: 0
             };
-            state.posts.push(newPost);
-            state.newPostText = "";
-            return state;
+            stateCopy.posts = [...state.posts];
+            stateCopy.posts.push(newPost);
+            stateCopy.newPostText = "";
+            return stateCopy;
         case UPDATE_POST:
-            state.newPostText = action.newText;
-            return state;
+            stateCopy.newPostText = action.newText;
+            return stateCopy;
         default:
             return state;
     }
