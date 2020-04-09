@@ -1,0 +1,22 @@
+.userHolder {
+
+}
+
+.image img{
+    max-width: 100%;
+}
+
+.image {
+    width: 20%;
+}
+
+.userContainer {
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+.name, .status, .locationHolder span {
+    display: block;
+    font-size: 12px;
+}
