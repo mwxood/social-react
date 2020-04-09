@@ -2,7 +2,6 @@ import {addPostActionCreator, updatePostActionCreator} from "../../redux/profile
 import MyPost from "./MyPost";
 import {connect} from "react-redux/es/alternate-renderers";
 
-
 let mapStateToProps = (state) => {
     return {
         posts: state.profilePage,

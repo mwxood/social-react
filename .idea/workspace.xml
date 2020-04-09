@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18cc9937-87e9-4634-9dc7-ac00a0212931" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/mainContent/comments/CommentsContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sidebar/friends/FriendsContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dialogs/DialogItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dialogs/DialogItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dialogs/DialogsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dialogs/DialogsContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainContent/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainContent/comments/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/comments/Comments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainContent/myPosts/MyPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/myPosts/MyPost.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainContent/myPosts/MyPostContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainContent/myPosts/MyPostContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/dialogsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogsReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/sidebarReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/sidebarReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sidebar/friends/Friends.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sidebar/friends/Friends.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +85,8 @@
       <workItem from="1585641798333" duration="5000" />
       <workItem from="1585656403284" duration="600000" />
       <workItem from="1585931285717" duration="1863000" />
-      <workItem from="1586327171558" duration="7254000" />
+      <workItem from="1586327171558" duration="8137000" />
+      <workItem from="1586414247337" duration="2847000" />
     </task>
     <servers />
   </component>

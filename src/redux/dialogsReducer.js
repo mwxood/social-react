@@ -16,27 +16,29 @@ let initialStateDailogs = {
 };
 
 const dialogsReducer = (state = initialStateDailogs, action) => {
-    let stateCopy = {...state};
     switch (action.type) {
+        case UPDATE_MESSAGE:
+            return {
+                ...state,
+                messageValue: action.newMessage
+            };
         case ADD_MESSAGE:
             let newMessage = {
                 id: 10,
-                message: stateCopy.messageValue,
+                message: state.messageValue,
                 src: "https://s3.amazonaws.com/liberty-uploads/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg",
             };
-            stateCopy.messages = [...state.messages];
-            stateCopy.messages.push(newMessage);
-            stateCopy.messageValue = "";
-            return stateCopy;
-        case UPDATE_MESSAGE:
-            stateCopy.messageValue = action.newMessage;
-            return stateCopy;
+            return {
+                ...state,
+                messageValue: "",
+                messages: [...state.messages, newMessage]
+            };
+
         default:
-            return stateCopy;
+            return state;
     }
 };
 
 export const addNewMessageActionCreator = () => ({type: ADD_MESSAGE});
 export const updateMessageActionCreator = (text) => ({type: UPDATE_MESSAGE, newMessage: text});
-
 export default dialogsReducer;
